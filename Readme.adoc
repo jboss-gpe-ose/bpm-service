@@ -1,6 +1,6 @@
-JA Bride:  this is a modification to the `quickstarts/switchyard/bpm-service` that comes included in JBoss Fuse Service Works 6.0.0.
-
 == Overview
+This is a modification to the `quickstarts/switchyard/bpm-service` that comes included in JBoss Fuse Service Works 6.0.0.
+
 Purpose of this modification is to introduce a `Business Rules` node into the `ProcessOrder.bpmn` and observe the pInstance variables inserted into working memory.
 
 image::ProcessOrder.png
