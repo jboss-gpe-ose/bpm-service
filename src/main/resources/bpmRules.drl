@@ -1,0 +1,19 @@
+package org.switchyard.quickstarts.bpm.service
+
+import org.switchyard.quickstarts.bpm.service.data.Order
+
+rule "retractOrderFromWorkingMemory"
+    ruleflow-group "bpmRuleGroup"
+    when
+        $order : Order()
+    then
+        System.out.println("retractOrderFromWorkingMemory()    \n\t"+$order);
+        retract($order);
+end
+
+rule "sanityCheck"
+    ruleflow-group "bpmRuleGroup"
+    when
+    then
+        System.out.println("**** sanityCheck() ********");
+end
